@@ -6,25 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chardee McDennis</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div>
-        <header>This is my TRIVIA GAME!!!</header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand justify-content-center" href="#">THIS IS MY TRIVIA GAME!</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Portfolio</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a> -->
+                <!-- </li> -->
+              </ul>
+          </nav>
+
+            <div class="row">
+                <div class="col">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="easyMode" autocomplete="off"> Easy Mode (WIP)
+                            </label>
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="hardMode" autocomplete="off" checked> Hard Mode
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="hardestMode" autocomplete="off"> Hardest Mode (WIP)
+                            </label>
+                        </div>
+                </div>
+            </div>
         
         <div>Time Remaining</div><span id="timeGoeshere"></span>
 
         <div id="question">Click somewhere to start!</div>
 
-        <ul>
-            <li id="answer1"></li>
-            <li id="answer2"></li>
-            <li id="answer3"></li>
-            <li id="answer4"></li>
-        </ul>
-
-
+        <div class="row">
+            <div class="col">
+                <button id="answer1" type="button" class="btn btn-primary btn-lg btn-block">Answer 1</button>
+                <button id="answer2" type="button" class="btn btn-primary btn-lg btn-block">Answer 2</button>
+                <button id="answer3" type="button" class="btn btn-primary btn-lg btn-block">Answer 3</button>
+                <button id="answer4" type="button" class="btn btn-primary btn-lg btn-block">Answer 4</button>
+            </div>
+        </div>
+        
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
