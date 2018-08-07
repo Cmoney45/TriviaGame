@@ -1,4 +1,23 @@
 body {
     text-align:center;
-    
+    background-image: url(../images/mainBg.jpg);
+    font-size: 18px;
+}
+
+.mycss-nav {
+    background-image: url(../images/orangeBg.jpg);
+}
+
+.mycss-gameBody {
+    border: solid black 1px;
+    margin-top: 5px;
+    padding: 5px;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url(../images/orangeBg.jpg);
+}
+@media (max-width: 640px) {
+    p {
+        margin-bottom: 4px;
+    }
 }

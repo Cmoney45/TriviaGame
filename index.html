@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand justify-content-center" href="#">THIS IS MY TRIVIA GAME!</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mycss-nav">
+            <a class="navbar-brand justify-content-center" href="#">TRIVIA GAME!</a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Portfolio</a>
@@ -25,54 +25,73 @@
                 <!-- </li> -->
               </ul>
           </nav>
-
-            <div class="row mt-3">
-                <div class="col">
-                    <h3>Difficulty Select</h3>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-secondary">
-                                <input type="radio" name="options" autocomplete="off" data-mode="easy" disabled> Easy Mode (WIP)
-                            </label>
-                            <label class="btn btn-secondary active">
-                                <input type="radio" name="options" autocomplete="off" data-mode="hardMode"> Hard Mode
-                            </label>
-                            <label class="btn btn-secondary">
-                                <input type="radio" name="options" autocomplete="off" data-mode="hardest" disabled> Hardest Mode (WIP)
-                            </label>
-                        </div>
-                </div>
-            </div>
-            <div class="row mt-1">
+          <div class="container">
+                <div class="row mt-2">
                     <div class="col">
-                        <h3>Question Bank to Use</h3>
-                            <div class="row btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-secondary active">
-                                    <input type="radio" name="options" autocomplete="off" data-bank="bankOne"> Random
-                                </label>
-                                <label class="btn btn-secondary">
-                                    <input type="radio" name="options" autocomplete="off" data-bank="riddles" disabled> Riddles (WIP)
-                                </label>
-                                <label class="btn btn-secondary">
-                                    <input type="radio" name="options" autocomplete="off" data-mode="CharDeeMcDennis" disabled> CharDee McDennis (WIP)
-                                </label>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Difficulty</h5>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn-group btn-group-toggle" id="difficulty" data-toggle="buttons">
+                                    <!-- <label class="btn btn-secondary difficulty" data-mode="easy">
+                                        <input type="radio" name="options" autocomplete="off"> Easy
+                                    </label> -->
+                                    <label class="btn btn-secondary difficulty" data-mode="hard">
+                                        <input type="radio" name="options" autocomplete="off"> Hard
+                                    </label>
+                                    <label class="btn btn-secondary difficulty" data-mode="hardest">
+                                        <input type="radio" name="options" autocomplete="off"> Hardest
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
-        <div id="timeStamp"></div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Question Bank to Use</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row btn-group btn-group-toggle" id="questionBank" data-toggle="buttons">
+                                    <label class="btn btn-secondary qBank" data-bank="bankOne">
+                                        <input type="radio" name="options" autocomplete="off"> Random
+                                    </label>
+                                    <label class="btn btn-secondary qBank" data-bank="riddles">
+                                        <input type="radio" name="options" autocomplete="off"> Riddles
+                                    </label>
+                                    <!-- <label class="btn btn-secondary qBank" data-bank="CharDeeMcDennis" disabled>
+                                        <input type="radio" name="options" autocomplete="off" disabled> CharDee McDennis
+                                    </label> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container mycss-gameBody">
+            <div class="row mt-4">
+                <div class="col" id="timeStamp"></div>
+            </div>
 
-        <!-- Question will go here! -->
-        <div id="question"></div>
+            <!-- Question will go here! -->
+            <div class="row mt-2">
+                <div class="col" id="question">
+                    <button id="reset" type="button" class="btn btn-primary btn-lg btn-block">Start!</button>
+                </div>
+            </div>
 
-        <!-- Questions answers will go here! -->
-        <div class="row mt-5">
-            <div class="col" id="responses">
-                <button id="startGame" type="button" class="btn btn-primary btn-lg btn-block">Click to Begin your Demise!</button>
-
+            <!-- Questions answers will go here! -->
+            <div class="row mt-2">
+                <div class="col" id="responses"></div>
             </div>
         </div>
-        
-      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
