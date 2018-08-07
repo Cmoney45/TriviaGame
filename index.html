@@ -26,21 +26,38 @@
               </ul>
           </nav>
 
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col">
+                    <h3>Difficulty Select</h3>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary">
-                                <input type="radio" name="options" id="easyMode" autocomplete="off"> Easy Mode (WIP)
+                                <input type="radio" name="options" autocomplete="off" data-mode="easy" disabled> Easy Mode (WIP)
                             </label>
                             <label class="btn btn-secondary active">
-                                <input type="radio" name="options" id="hardMode" autocomplete="off" checked> Hard Mode
+                                <input type="radio" name="options" autocomplete="off" data-mode="hardMode"> Hard Mode
                             </label>
                             <label class="btn btn-secondary">
-                                <input type="radio" name="options" id="hardestMode" autocomplete="off"> Hardest Mode (WIP)
+                                <input type="radio" name="options" autocomplete="off" data-mode="hardest" disabled> Hardest Mode (WIP)
                             </label>
                         </div>
                 </div>
             </div>
+            <div class="row mt-1">
+                    <div class="col">
+                        <h3>Question Bank to Use</h3>
+                            <div class="row btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary active">
+                                    <input type="radio" name="options" autocomplete="off" data-bank="bankOne"> Random
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" autocomplete="off" data-bank="riddles" disabled> Riddles (WIP)
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" autocomplete="off" data-mode="CharDeeMcDennis" disabled> CharDee McDennis (WIP)
+                                </label>
+                            </div>
+                    </div>
+                </div>
         
         <div id="timeStamp"></div>
 
@@ -48,7 +65,7 @@
         <div id="question"></div>
 
         <!-- Questions answers will go here! -->
-        <div class="row">
+        <div class="row mt-5">
             <div class="col" id="responses">
                 <button id="startGame" type="button" class="btn btn-primary btn-lg btn-block">Click to Begin your Demise!</button>
 
