@@ -8,6 +8,10 @@ body {
     background-image: url(../images/orangeBg.jpg);
 }
 
+#anwPic {
+    width: 250px;
+    height: 250px;
+}
 .mycss-gameBody {
     border: solid black 1px;
     margin-top: 5px;
